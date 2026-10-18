@@ -1,0 +1,24 @@
+{
+  "geode": "4.0.0",
+  "id": "yourname.dynamic_input_buffer",
+  "name": "Dynamic Input Buffer",
+  "version": "v1.0.0",
+  "developer": "YourName",
+  "description": "Experimental input buffer mod that grants tick leniency on early clicks.",
+  "settings": {
+    "enabled": {
+      "name": "Enable Mod",
+      "description": "Toggles the input buffering behavior.",
+      "type": "bool",
+      "default": true
+    },
+    "buffer-ticks": {
+      "name": "Buffer Ticks",
+      "description": "How many frames/ticks early an input can be buffered (e.g., 2 to 8 ticks).",
+      "type": "int",
+      "default": 2,
+      "min": 1,
+      "max": 16
+    }
+  }
+}
