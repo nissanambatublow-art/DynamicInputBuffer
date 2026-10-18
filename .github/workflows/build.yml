@@ -5,6 +5,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: geode-sdk/install-cli@main
+      - run: geode sdk install-binaries
       - uses: geode-sdk/build-geode-mod@main
         with:
           sdk: latest
