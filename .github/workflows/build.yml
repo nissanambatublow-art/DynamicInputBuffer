@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Geode CLI & Binaries
+        run: |
+          pnpm install -g @geode-sdk/cli
+          geode sdk install-binaries
+
       - uses: geode-sdk/build-geode-mod@main
         with:
           sdk: latest
